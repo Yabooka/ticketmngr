@@ -9,7 +9,7 @@ const TicketSchema = new mongoose.Schema({
   },
   status: {
     type: String,
-    enum: ['Dijagnostika', 'U radu', 'Zavrseno'],
+    enum: ['Diagnostics', 'In Progress', 'Completed'],
   },
   clientId: {
     type: mongoose.Schema.Types.ObjectId,
